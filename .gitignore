@@ -7,6 +7,9 @@
 build/
 out/
 
+# Maven
+target/
+
 # Special exception for my test main class used during development
 src/main/java/com/ecwid/consul/LocalTest.java
 
